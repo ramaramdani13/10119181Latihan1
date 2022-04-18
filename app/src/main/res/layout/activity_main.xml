@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Nama : Rama Ramdani
+NIM : 10119181
+Kelas : IF-5
+Tgl Pengerjaan : 18 April 2022
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/backgr"
+tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_layout"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/logo"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/digiteam"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Digital Together Everyone Achieve More"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/lato"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Jabar Digital Service"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/lato"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/eclipse"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI Designer"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/lato"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg_white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jamkerja"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="16dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jamkerjabulan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#0D47A1"
+                android:textSize="14dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/customCard"
+                    android:id="@+id/card_view"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/green">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="130.53 JAM"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16dp"
+                        android:textColor="#FFF"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/customCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/greenlight"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/jam"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batas Minimum Jam Kerja 170 jam/bulan"
+                android:textSize="12dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/lato"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Checkin"
+                android:textAllCaps="false"
+                android:theme="@style/button.green"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg_white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/laporan"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="16dp"
+                android:textSize="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Maret"
+                    android:textColor="@color/green"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="April"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <!-- Baris 1 -->
+                    <View
+                        android:id="@+id/maret1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret2"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret1"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret3"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret2"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret4"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret3"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret5"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret4"
+                        android:background="@color/green" />
+
+                    <!-- Baris 2-->
+
+                    <View
+                        android:id="@+id/maret6"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@+id/maret1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret7"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret2"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret6"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret8"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret2"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret7"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret9"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret2"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret8"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret10"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret2"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/maret9"
+                        android:background="@color/green" />
+
+                    <!-- Baris 3 -->
+                    <View
+                        android:id="@+id/maret11"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret12"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret11"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret13"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret12"
+                        android:background="@color/toscalight" />
+
+                    <View
+                        android:id="@+id/maret14"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret13"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret15"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret14"
+                        android:background="@color/toscalight" />
+
+                    <!-- Baris 4 -->
+
+                    <View
+                        android:id="@+id/maret16"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret17"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret16"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret18"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret17"
+                        android:background="@color/toscalight" />
+
+                    <View
+                        android:id="@+id/maret19"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret18"
+                        android:background="@color/toscadark" />
+
+                    <View
+                        android:id="@+id/maret20"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret19"
+                        android:background="@color/greenlight" />
+
+                    <!-- Baris 5 -->
+                    <View
+                        android:id="@+id/maret21"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret22"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret21"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret23"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret22"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/maret24"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret23"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret25"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret24"
+                        android:background="@color/greenlight" />
+
+                    <!-- Baris 6 -->
+                    <View
+                        android:id="@+id/maret26"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/maret27"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret26"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret28"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret27"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret29"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret28"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/maret30"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/maret29"
+                        android:background="@color/toscadark" />
+
+                    <!-- Baris 6 -->
+                    <View
+                        android:id="@+id/maret31"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/maret26"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/toscadark" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp">
+
+                    <!-- Baris 1 -->
+                    <View
+                        android:id="@+id/april1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/april2"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april1"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/april3"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april2"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/april4"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april3"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april5"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april4"
+                        android:background="@color/greentosca" />
+
+                    <!-- Baris 2 -->
+                    <View
+                        android:id="@+id/april6"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/april7"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april6"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april8"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april7"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/april9"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april8"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april10"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april1"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april9"
+                        android:background="@color/greenlight" />
+
+                    <!-- Baris 3 -->
+                    <View
+                        android:id="@+id/april11"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/toscadark" />
+
+                    <View
+                        android:id="@+id/april12"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april11"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/april13"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april12"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/april14"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april13"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april15"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april6"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april14"
+                        android:background="@color/greentosca" />
+
+                    <!-- Baris 4 -->
+
+                    <View
+                        android:id="@+id/april16"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/greenlight" />
+
+                    <View
+                        android:id="@+id/april17"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april16"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april18"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april17"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april19"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april18"
+                        android:background="@color/greentosca" />
+
+                    <View
+                        android:id="@+id/april20"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april11"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april19"
+                        android:background="@color/greenlight" />
+
+                    <!-- Baris 5 -->
+                    <View
+                        android:id="@+id/april21"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/green" />
+
+                    <View
+                        android:id="@+id/april22"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april21"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april23"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april22"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april24"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april23"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april25"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april16"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april24"
+                        android:background="@color/whiteshadow" />
+
+                    <!-- Baris 6 -->
+                    <View
+                        android:id="@+id/april26"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april27"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april26"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april28"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april27"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april29"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april28"
+                        android:background="@color/whiteshadow" />
+
+                    <View
+                        android:id="@+id/april30"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@id/april21"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@id/april29"
+                        android:background="@color/whiteshadow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Buat Laporan"
+                android:textAllCaps="false"
+                android:theme="@style/button.green"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/vectorizin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="33dp"
+                    android:text="Izin"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/vectoragenda"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="26dp"
+                    android:text="Agenda"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/vectorkehadiran"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Kehadiran"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/vectorbookingdanlaporan"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="95dp"
+                    android:text="Booking"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="95dp"
+                    android:src="@drawable/vectorbookingdanlaporan"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Laporan"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="95dp"
+                    android:src="@drawable/vectorwiki"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Wiki"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
